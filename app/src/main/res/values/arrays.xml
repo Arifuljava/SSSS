@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //team
+    <string-array name="payment">
+        <item>Select Payment Method</item>
+        <item>Bkash</item>
+        <item>Nagad</item>
+
+        <item>Binance</item>
+    </string-array>
+    //
+
+    <string-array name="deposite">
+        <item>Select Deposit Method</item>
+        <item>Bkash</item>
+        <item>Nagad</item>
+        <item>Binance</item>
+    </string-array><!-- Reply Preference -->
+
+    <!-- Reply Preference -->
+
+    //
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+    //
+
+</resources>

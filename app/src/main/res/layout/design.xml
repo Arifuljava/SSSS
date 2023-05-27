@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/login_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                >
+                <TableRow
+
+                    android:background="@drawable/raw5">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/username"
+                        android:text="Balance Information"
+                        android:textColor="@android:color/white"
+                        android:padding="10sp"
+                        android:fontFamily="@font/montserrat"
+                        android:textAllCaps="false"
+
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:layout_weight="10"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/raw1">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/currentdollarrate"
+                        android:text="Balance Information"
+                        android:textColor="@android:color/white"
+                        android:padding="10sp"
+                        android:textAllCaps="false"
+
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_weight="10"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@drawable/raw1"
+
+                        android:padding="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Deposit Balance(USD) : "
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+
+
+                    <TextView
+                        android:background="@drawable/raw1"
+                        android:text="0"
+                        android:id="@+id/loginid"
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:layout_weight="4"
+
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:background="@drawable/raw2"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="Deposit Balance(BDT) : "
+                        android:padding="12sp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        />
+
+
+
+                    <TextView
+                        android:background="@drawable/raw2"
+                        android:text="0"
+                        android:id="@+id/name____1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="10sp"
+                        android:fontFamily="@font/montserrat"
+
+                        android:textSize="12dp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:layout_weight="4"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        />
+
+                </TableRow>
+
+
+
+
+
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:background="@drawable/raw3"
+                        android:text="Main Balance(USD) :   "
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="10sp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:layout_weight="4"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:background="@drawable/raw3"
+                        android:text="0"
+                        android:id="@+id/sponsar"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+
+                        android:padding="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="10sp"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:layout_weight="4"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/raw4"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:padding="12dp"
+                        android:fontFamily="@font/montserrat"
+
+                        android:text="Main Balance(BDT) : "
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:stretchColumns="0"
+                        android:gravity="center">
+
+
+                        <TableRow
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+
+                            >
+
+                            <TextView
+                                android:textSize="12dp"
+                                android:id="@+id/current_state1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="0"
+                                android:fontFamily="@font/montserrat"
+
+                                android:layout_column="0"
+                                android:textColor="@color/white"
+                                android:background="@drawable/raw4"
+                                android:textStyle="normal"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:visibility="gone"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="B"
+                                android:textAlignment="center"
+
+                                android:layout_column="1"
+                                android:background="@drawable/border"
+                                android:gravity="center"
+                                android:textStyle="normal"
+                                />
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="C"
+                                android:textAlignment="center"
+                                android:background="@drawable/border"
+                                android:gravity="center"
+                                android:textStyle="normal"
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+
+
+
+                    </TableLayout>
+
+
+
+
+
+
+                </TableRow>
+                ///1
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/raw1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:padding="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Refer Balance(USD) : "
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:stretchColumns="0"
+                        android:gravity="center">
+
+
+                        <TableRow
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+
+                            >
+
+                            <TextView
+                                android:textSize="12dp"
+                                android:id="@+id/current_state2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="0"
+                                android:fontFamily="@font/montserrat"
+
+                                android:layout_column="0"
+                                android:textColor="@color/white"
+                                android:background="@drawable/raw1"
+                                android:textStyle="normal"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:visibility="gone"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="B"
+                                android:textAlignment="center"
+
+                                android:layout_column="1"
+                                android:background="@drawable/border"
+                                android:gravity="center"
+                                android:textStyle="normal"
+                                />
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="C"
+                                android:textAlignment="center"
+                                android:background="@drawable/border"
+                                android:gravity="center"
+                                android:textStyle="normal"
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+
+
+
+                    </TableLayout>
+
+
+
+
+
+
+                </TableRow>
+                ///2
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/raw3"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        android:padding="12dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Refer Balance(BDT) : "
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                    <TableLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="4"
+                        android:stretchColumns="0"
+                        android:gravity="center">
+
+
+                        <TableRow
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+
+                            >
+
+                            <TextView
+                                android:textSize="12dp"
+                                android:id="@+id/current_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="0"
+                                android:fontFamily="@font/montserrat"
+
+                                android:layout_column="0"
+                                android:textColor="@color/white"
+                                android:background="@drawable/raw3"
+                                android:textStyle="normal"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:visibility="gone"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="B"
+                                android:textAlignment="center"
+
+                                android:layout_column="1"
+                                android:background="@drawable/border"
+                                android:gravity="center"
+                                android:textStyle="normal"
+                                />
+
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="C"
+                                android:textAlignment="center"
+                                android:background="@drawable/border"
+                                android:gravity="center"
+                                android:textStyle="normal"
+                                android:layout_column="2"
+                                />
+                        </TableRow>
+
+
+
+                    </TableLayout>
+
+
+
+
+
+
+                </TableRow>
+
+
+            </TableLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_below="@id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

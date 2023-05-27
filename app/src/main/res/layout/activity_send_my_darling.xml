@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".SendMyDarling">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient_background"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/linear"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/allcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:layout_marginRight="@dimen/space_10dp"
+                    android:gravity="center_vertical"
+                    android:text="Amount"
+                    android:textStyle="normal"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+
+
+                    ></TextView>
+                <EditText
+                    android:id="@+id/spinner1"
+                    android:hint="      Enter amount"
+                    android:background="@drawable/bcorder"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:inputType="numberDecimal"
+                    android:layout_marginRight="@dimen/space_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    ></EditText>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/textammountss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="@dimen/space_10dp"
+                    android:gravity="center_vertical"
+                    android:text="Amount"
+                    android:textStyle="normal"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+
+
+                    ></TextView>
+                //
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:layout_marginRight="@dimen/space_10dp"
+                    android:gravity="center_vertical"
+                    android:text="To User ID"
+                    android:textStyle="normal"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+
+
+                    ></TextView>
+                <EditText
+                    android:id="@+id/toid"
+                    android:hint="     Enter receiver user id"
+                    android:background="@drawable/bcorder"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:inputType="text"
+                    android:layout_marginRight="@dimen/space_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    ></EditText>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/textammount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="@dimen/space_10dp"
+                    android:gravity="center_vertical"
+                    android:text="Amount"
+                    android:textStyle="normal"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+
+
+                    ></TextView>
+
+                //
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:layout_marginRight="@dimen/space_10dp"
+                    android:gravity="center_vertical"
+                    android:text="Account Pin"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+
+
+                    ></TextView>
+
+                <EditText
+                    android:maxLength="11"
+                    android:hint="      Enter your account pin"
+                    android:background="@drawable/bcorder"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/transcationpin"
+                    android:inputType="text"
+                    android:layout_marginRight="@dimen/space_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    ></EditText>
+                <Button
+                    android:elevation="10dp"
+                    android:padding="10dp"
+
+                    android:id="@+id/cirLoginButton"
+                    style="@style/loginButton"
+                    android:text="SEND"
+
+                    android:minWidth="150dp"
+
+                    android:textAllCaps="true"
+
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/showing"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:layout_marginRight="@dimen/space_10dp"
+                    android:gravity="center_vertical"
+                    android:text="Available Balance : 102tk"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+
+
+                    ></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                //date
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/work33333"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:onClick="tree"
+
+
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#154c79"
+
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:foregroundTint="@color/white"
+                            android:layout_width="50dp"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="@dimen/space_50dp"
+                            android:layout_centerInParent="true"
+                            />
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:padding="8dp"
+                            android:id="@+id/date22"
+
+                            android:textSize="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Transfer History"
+                            android:gravity="center_horizontal" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/redeemCard"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:onClick="invite"
+
+
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#154c79"
+
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:foregroundTint="@color/white"
+                            android:layout_width="50dp"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="@dimen/space_50dp"
+                            android:layout_centerInParent="true"
+                            />
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:padding="8dp"
+                            android:textSize="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Receive History"
+                            android:gravity="center_horizontal" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

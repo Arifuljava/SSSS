@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+
+
+    tools:context=".ConfromActivity">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient_background"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/allcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_below="@id/main_constraint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_10dp"
+                            android:background="@drawable/main_bg"
+                            android:text="Confirm Add Balance"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:gravity="center_vertical"
+
+
+                            ></TextView>
+                        <LinearLayout
+
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="10dp"
+                                    android:text="Request   Details"
+                                    android:textColor="#fff" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" Name   : "
+                                        style="@style/fonts"
+                                        android:textColor="#fff"/>
+
+                                    <TextView
+                                        android:id="@+id/no_of_items"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/headingfonts"
+                                        android:inputType="textMultiLine"
+                                        android:textColor="#fff"
+                                        android:text="10"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Amount   : "
+                                        style="@style/fonts"
+                                        android:textColor="#fff"/>
+
+                                    <TextView
+                                        android:id="@+id/total_amount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/headingfonts"
+                                        android:inputType="textMultiLine"
+                                        android:textColor="#fff"
+                                        android:text="15000"/>
+
+                                </LinearLayout>
+                                //emais
+
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/space_10dp"
+                                android:layout_marginRight="@dimen/space_10dp"
+                                android:background="@drawable/main_bg"
+                                android:text="Deposit Details"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical"
+
+
+                                ></TextView>
+                            <EditText
+                                android:visibility="gone"
+
+                                android:hint="Enter your payment account"
+                                android:background="@drawable/bcorder"
+                                android:layout_marginLeft="20dp"
+                                android:text="Package Price : 500 tk"
+                                android:enabled="false"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:maxLength="500"
+                                android:textAlignment="center"
+                                android:inputType="text"
+                                android:layout_marginTop="@dimen/space_10dp"
+                                android:layout_marginRight="@dimen/space_20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_50dp"
+                                ></EditText>
+                            <EditText
+                                android:visibility="visible"
+                                android:id="@+id/amountdd"
+                                android:hint="Enter Deposit Amount"
+                                android:enabled="true"
+                                android:background="@drawable/bcorder"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:maxLength="500"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:layout_marginTop="@dimen/space_10dp"
+                                android:layout_marginRight="@dimen/space_20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_50dp"
+                                ></EditText>
+                            <EditText
+                                android:id="@+id/myaccount"
+                                android:hint=""
+                                android:visibility="gone"
+                                android:enabled="false"
+                                android:background="@drawable/bcorder"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:maxLength="500"
+                                android:textAlignment="center"
+                                android:inputType="text"
+                                android:layout_marginTop="@dimen/space_10dp"
+                                android:layout_marginRight="@dimen/space_20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_50dp"
+                                ></EditText>
+                            <Spinner
+
+                                android:id="@+id/spinner3"
+                                android:background="@drawable/bcorder"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="@dimen/space_10dp"
+                                android:layout_marginRight="@dimen/space_20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_50dp"
+                                ></Spinner>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="@dimen/space_10dp"
+                                android:layout_marginRight="@dimen/space_20dp"
+                                >
+                                <TextView
+                                    android:id="@+id/spinner4"
+                                    android:layout_centerVertical="true"
+                                    android:textAlignment="center"
+                                    android:gravity="center_vertical"
+
+
+                                    android:hint="Payment account"
+                                    android:background="@drawable/bcorder"
+
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp"
+                                    android:maxLength="50000"
+
+                                    android:inputType="phone"
+                                    android:minHeight="50dp"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    ></TextView>
+                            </RelativeLayout>
+
+                            <EditText
+                                android:id="@+id/spinner1"
+                                android:hint="Enter your payment account"
+                                android:background="@drawable/bcorder"
+                                android:layout_marginLeft="20dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:maxLength="500"
+                                android:textAlignment="center"
+                                android:inputType="text"
+                                android:layout_marginTop="@dimen/space_10dp"
+                                android:layout_marginRight="@dimen/space_20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_50dp"
+                                ></EditText>
+                            <EditText
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:id="@+id/spinner2"
+                                android:hint="Transaction ID"
+                                android:maxLength="50"
+                                android:inputType="text"
+                                android:background="@drawable/bcorder"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="@dimen/space_10dp"
+                                android:layout_marginRight="@dimen/space_20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_50dp"
+                                ></EditText>
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_marginBottom="25dp"
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_10dp"
+                            >
+                            <Button
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/upgrade"
+                                android:background="@drawable/main_bg"
+
+
+
+                                android:gravity="center_vertical"
+                                android:layout_centerInParent="true"
+                                android:minWidth="160dp"
+                                android:text="Confirm"
+
+                                android:backgroundTint="@color/white"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+
+
+                                ></Button>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+

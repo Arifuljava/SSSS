@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondWork">
+    <LinearLayout
+
+        android:background="#262626"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+
+            >
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/exoplayerview"
+                android:layout_margin="3dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:use_controller="false"
+                app:resize_mode="fill"/>
+            <VideoView
+                android:visibility="visible"
+                android:id="@+id/videoView"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:id="@+id/ddddd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:visibility="gone"
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_desc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/white">
+
+                    <TableRow
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="10"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+
+                            android:text="Daily Work\nWorking Timer"
+                            android:textAlignment="textStart"
+                            android:textColor="@android:color/white"
+                            android:textSize="15dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/maintokiyo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:background="@drawable/border"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="20 Taka"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/bonus"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+
+                            android:background="@drawable/border"
+                            android:gravity="center_horizontal"
+                            android:padding="10sp"
+                            android:text="20s"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                    </TableRow>
+                </TableLayout>
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <com.owater.library.CircleTextView
+                            android:layout_width="250dp"
+                            android:layout_height="130dp"
+                            app:ct_backgroundColor="@color/com6"
+                            app:ct_border_width="10dp"
+                            app:ct_border_color="#0099CC"
+                            app:ct_border_alpha="0.8"
+                            app:ct_type="shadow_alpha"
+                            android:id="@+id/cir"
+                            android:text="Wtach \nvideo"
+
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:textSize="16sp"
+                            android:layout_marginTop="20dp"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

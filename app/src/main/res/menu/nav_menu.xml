@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="General">
+        <menu>
+            <item
+
+                android:id="@+id/addNote"
+                android:icon="@drawable/ic_home"
+                android:title="Home" />
+            <item
+                android:id="@+id/poffrf"
+                android:icon="@drawable/ic_baseline_mood_24"
+                android:title="My Package Details" />
+
+            <item
+                android:id="@+id/porf"
+                android:icon="@drawable/user"
+                android:title="Profile" />
+
+
+            <item
+                android:id="@+id/cartliost"
+
+                android:icon="@drawable/myhistory"
+                android:title="Deposit History"
+                />
+            <item
+                android:id="@+id/history"
+
+                android:icon="@drawable/myhistory"
+                android:title="Withdraw History"
+                />
+            <item
+                android:id="@+id/shareapp1"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="Settings" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_vpn_key_24"
+                android:title="Logout" />
+
+
+        </menu>
+    </item>
+
+</menu>

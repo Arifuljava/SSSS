@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Capital Cash</string>
+    <string name="powered_by">Powered by</string>
+    <string name="developer_depository">Capital Technologies</string>
+
+    <!-- OnBoarding Screen Strings -->
+
+    <!-- Welcome Screen Strings -->
+
+    <!-- Sign Up & Login Screen Strings -->
+
+    <string name="name_hint">Name*</string>
+    <string name="email_hint">Email*</string>
+    <string name="create_password_hint">Create Password*</string>
+    <string name="confirm_password_hint">Confirm Password*</string>
+    <string name="email_or_mobile_hint">Email or Username*</string>
+    <string name="password_hint">Password*</string>
+    <string name="sign_in_title">Get Started!</string>
+    <string name="sign_in_subtitle">Sign in to continue.</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in_btn_text">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up_title">Create Account!</string>
+    <string name="sign_up_subtitle">Sign up to get started.</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="next_btn_text">Next</string>
+
+    <!-- Verify OTP Screen Strings -->
+
+    <!-- Forgot Password Screen Strings -->
+
+    <!-- Home Screen Strings -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

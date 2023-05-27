@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffff"
+
+    tools:context=".BalanceDetailsActivity">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient_background"
+               />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/main_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="centerCrop"
+
+                        android:id="@+id/image"
+                        >
+
+                    </ImageView>
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/cardhldername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="200dp"
+                            android:layout_alignParentLeft="true"
+
+
+                            android:layout_centerInParent="false"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="5dp"
+
+
+                            android:background="#354d62"
+                            android:fontFamily="@font/josefinsans_semibold"
+                            android:gravity="center_vertical"
+
+                            android:padding="8dp"
+                            android:text="EPCL Card"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="127dp"
+                            android:id="@+id/cardnumber"
+                            android:layout_marginRight="30dp"
+
+
+
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="false"
+                            android:padding="8dp"
+
+
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="15dp"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/red_connectify"
+                            android:fontFamily="@font/josefinsans_semibold"
+                            android:text="EPCL Card"
+                            android:gravity="center_vertical" />
+                        <LinearLayout
+                            android:layout_marginTop="108dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:background="#193147"
+                            >
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_vertical"
+                                >
+                                <TextView
+                                    android:id="@+id/dailyCheck55Card1"
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:text="1111"
+                                    >
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/dailyCheck55Card2"
+                                    android:layout_width="0dp"
+                                    android:text="1111"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    >
+
+                                </TextView>
+                                <TextView
+                                    android:text="1111"
+                                    android:id="@+id/dailyCheck55Card3"
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    >
+
+                                </TextView>
+
+                                <TextView
+                                    android:text="1111"
+                                    android:id="@+id/dailyCheck55Card4"
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    >
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_marginTop="138dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:background="#1b3447"
+                        >
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <include
+                        layout="@layout/design"
+                        ></include>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

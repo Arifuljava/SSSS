@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    tools:context=".PaymentActivity">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient_background"
+                 >
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+
+        android:layout_below="@id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_below="@id/main_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:id="@+id/linear"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/allcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <RelativeLayout
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:layout_marginRight="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+                                <TextView
+                                    android:id="@+id/coinsTf1v"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:drawableStart="@drawable/dddollar"
+                                    android:drawableLeft="@drawable/dddollar"
+                                    android:drawablePadding="12dp"
+                                    android:gravity="center_vertical"
+
+                                    android:textColor="#fff"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/coinsT1v"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginEnd="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:drawablePadding="12dp"
+                                    android:gravity="center_vertical"
+
+                                    android:textColor="@color/toolbar1"
+                                    android:text="5000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/tana"
+                                    android:visibility="gone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginEnd="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:drawablePadding="12dp"
+                                    android:gravity="center_vertical"
+
+                                    android:textColor="@color/toolbar1"
+                                    android:text="5000"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <EditText
+                            android:id="@+id/myaccount"
+                            android:hint=""
+                            android:visibility="gone"
+                            android:enabled="false"
+                            android:background="@drawable/bcorder"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:maxLength="500"
+                            android:textAlignment="center"
+                            android:inputType="text"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_50dp"
+                            ></EditText>
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:background="@drawable/bcorder"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_50dp"
+                            ></Spinner>
+
+                        <EditText
+                            android:id="@+id/spinner1"
+                            android:textAlignment="center"
+                            android:hint="Enter Your Account Address"
+                            android:background="@drawable/bcorder"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:maxLength="25"
+                            android:inputType="text"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_50dp"
+                            ></EditText>
+
+                        <EditText
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:id="@+id/spinner2"
+                            android:hint="Amount"
+                            android:maxLength="7"
+                            android:inputType="number"
+                            android:background="@drawable/bcorder"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_50dp"
+                            ></EditText>
+                        <EditText
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:id="@+id/passworddd"
+                            android:hint="Enter Password"
+
+                            android:inputType="text"
+                            android:background="@drawable/bcorder"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_50dp"
+                            ></EditText>
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_10dp"
+                            android:gravity="center_vertical"
+                            android:text="Payment Method"
+                            android:textStyle="normal"
+                            android:id="@+id/account_his"
+                            android:visibility="gone"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/red_connectify"
+
+
+                            ></TextView>
+                        <RelativeLayout
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="@dimen/space_10dp"
+                            android:layout_marginRight="@dimen/space_10dp"
+                            >
+
+                            <Button
+                                android:id="@+id/upgrade"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_centerHorizontal="true"
+
+
+                                android:background="@drawable/allcard5"
+                                android:gravity="center_vertical"
+                                android:minWidth="160dp"
+                                android:text="Withdraw Request"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+
+
+                                android:textColor="@color/white"></Button>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
